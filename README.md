@@ -1,4 +1,3 @@
-```markdown
 # 🎤 Voice AI (Gemini + LangGraph + WebSockets)
 
 A real-time **Voice AI Assistant** built using:
@@ -214,4 +213,3 @@ ws://localhost:8000/ws
 **Abdul Monim Tariq Lodhi**
 * AI Engineer | Agentic AI Systems
 * React | LangGraph | RAG | Multi-Agent Systems | MCP
-```
