@@ -85,7 +85,7 @@ frontend/
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/your-username/voice-ai.git](https://github.com/your-username/voice-ai.git)
+git clone https://github.com/abdulmonimlodhi/voice-ai.git
 cd voice-ai/backend
 ```
 
