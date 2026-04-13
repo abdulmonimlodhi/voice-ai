@@ -1,5 +1,4 @@
 ---
-
 # 🎤 Voice AI (Gemini + LangGraph + WebSockets)
 
 A real-time **Voice AI Assistant** built using:
