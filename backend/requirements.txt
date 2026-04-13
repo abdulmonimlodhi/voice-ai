@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+websockets
+requests
+pyttsx3
+gtts
+langgraph
+langchain
+python-dotenv
+langchain
+langchain-tavily
+wikipedia
+langchain-groq
+langchain-google-genai
