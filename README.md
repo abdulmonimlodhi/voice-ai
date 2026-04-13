@@ -23,14 +23,14 @@ This project enables users to **speak → process via AI agent → receive text 
 
 ## Features
 
-✅ Real-time WebSocket communication
-✅ Voice input (Speech-to-Text)
-✅ AI-powered responses using Gemini
-✅ Tool-augmented agent (Tavily + Wikipedia)
-✅ Text-to-Speech (TTS) audio responses
-✅ Conversation memory via LangGraph
-✅ Clean chat UI with Markdown support
-✅ Auto WebSocket reconnect
+* Real-time WebSocket communication
+* Voice input (Speech-to-Text)
+* AI-powered responses using Gemini
+* Tool-augmented agent (Tavily + Wikipedia)
+* Text-to-Speech (TTS) audio responses
+* Conversation memory via LangGraph
+* Clean chat UI with Markdown support
+* Auto WebSocket reconnect
 
 ---
 
