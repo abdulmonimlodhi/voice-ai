@@ -1,4 +1,4 @@
----
+```markdown
 # 🎤 Voice AI (Gemini + LangGraph + WebSockets)
 
 A real-time **Voice AI Assistant** built using:
@@ -11,6 +11,7 @@ A real-time **Voice AI Assistant** built using:
 * **Speech Recognition (browser-based)**
 
 This project enables users to **speak → process via AI agent → receive text + voice response in real time**.
+
 ---
 
 ## Live Demo
@@ -35,7 +36,7 @@ This project enables users to **speak → process via AI agent → receive text 
 
 ## Architecture
 
-```
+```text
 User Voice
    ↓
 Speech Recognition (Browser)
@@ -55,7 +56,7 @@ Audio to Frontend
 
 ## Project Structure
 
-```
+```text
 backend/
 │
 ├── app/
@@ -85,7 +86,7 @@ frontend/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/voice-ai.git
+git clone [https://github.com/your-username/voice-ai.git](https://github.com/your-username/voice-ai.git)
 cd voice-ai/backend
 ```
 
@@ -93,7 +94,7 @@ cd voice-ai/backend
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Mac/Linux
+source .venv/bin/activate
 ```
 
 ### 3. Install dependencies
@@ -117,11 +118,7 @@ TAVILY_API_KEY=your_tavily_key
 uvicorn app.main:app --reload
 ```
 
-Server runs at:
-
-```
-http://127.0.0.1:8000
-```
+Server runs at: `http://127.0.0.1:8000`
 
 ---
 
@@ -133,11 +130,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs at:
-
-```
-http://localhost:5173
-```
+Frontend runs at: `http://localhost:5173`
 
 ---
 
@@ -154,20 +147,18 @@ docker run -p 8000:8000 voice-ai
 
 ### Endpoint
 
-```
+```text
 ws://localhost:8000/ws
 ```
 
 ### Message Flow
 
 #### Client → Server
-
 ```json
 "Hello AI"
 ```
 
 #### Server → Client
-
 ```json
 { "type": "text", "data": "AI response" }
 { "type": "audio", "data": "base64-audio" }
@@ -179,11 +170,9 @@ ws://localhost:8000/ws
 ## Tools Used in Agent
 
 ### 1. Tavily Search
-
 * Real-time web search
 
 ### 2. Wikipedia Tool
-
 * Quick summaries
 * Token-limited to avoid rate issues
 
@@ -192,26 +181,19 @@ ws://localhost:8000/ws
 ## Key Concepts
 
 ### LangGraph Agent
-
 * Stateful conversation handling
 * Tool routing via `tools_condition`
 * Memory using `MemorySaver`
 
 ### Output Handling
-
-* Handles both:
-
-  * Plain text
-  * Gemini structured responses
+* Handles both plain text and Gemini structured responses
 
 ### TTS
-
 * Converts AI response → MP3 → Base64 → Browser playback
 
 ---
 
 ## Known Limitations
-
 * `webkitSpeechRecognition` works best in Chrome
 * Audio autoplay may be blocked by browser policies
 * gTTS adds slight latency
@@ -220,33 +202,16 @@ ws://localhost:8000/ws
 ---
 
 ## Future Improvements
-
 * Replace gTTS with streaming TTS
 * Add streaming responses (token-by-token)
 * Add user authentication
 * Store chat history in database
-* Multi-language support
-* Voice activity detection (VAD)
-
----
-
-## Example Use Cases
-
-* AI Voice Assistant
-* Customer Support Bot
-* Interview Practice AI
-* Learning Companion
-* Developer Copilot (voice-enabled)
 
 ---
 
 ## 👨‍💻 Author
 
 **Abdul Monim Tariq Lodhi**
-
 * AI Engineer | Agentic AI Systems
 * React | LangGraph | RAG | Multi-Agent Systems | MCP
-
----
-
-[def]: ./assets/demo.png
+```
